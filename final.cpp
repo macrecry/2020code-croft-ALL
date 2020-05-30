@@ -59,6 +59,7 @@ struct node32{
 	bool operator < (const node32 &r)const {return first>r.first;}//32位优先队列所用结构，默认最大堆，所用重载<为大于;
 	node32 operator = (const node32 &r) {first=r.first;second=r.second; return *this;}//重载赋值
 };//32位优先队列所用结构
+
 class HEAP{//带更新的手写堆
     public:
         node32 node[1024000];
